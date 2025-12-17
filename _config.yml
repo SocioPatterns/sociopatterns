@@ -1,7 +1,7 @@
 title: "SocioPatterns"
 description: "The home of the SocioPatterns research collaboration"
-url: "https://www.sociopatterns.org"
-baseurl: ""
+url: "https://sociopatterns.github.io"
+baseurl: "/sociopatterns"
 
 markdown: kramdown
 theme: null
