@@ -7,9 +7,6 @@ markdown: kramdown
 theme: null
 plugins:
 
-include:
-  - favicon.ico
-
 collections:
   publications:
     output: false
