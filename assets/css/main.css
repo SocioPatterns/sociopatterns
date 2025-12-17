@@ -896,6 +896,20 @@ html {
     top: 100%;
     margin-top: 8px;
   }
+}
+
+/* Extra small screens - even tighter spacing */
+@media (max-width: 500px) {
+  .site-nav a {
+    padding: 0 0.3rem;          /* very tight */
+    font-size: 0.7em;           /* smaller font */
+    letter-spacing: 0;          /* remove letter spacing */
+  }
+
+  /* Remove separators on very small screens */
+  .site-nav a + a::before {
+    display: none;
+  }
 
   .site-footer {
     padding-top: 1.2rem;
@@ -1034,6 +1048,24 @@ html {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* On mobile/tablet: center floated images instead of floating them */
+@media (max-width: 700px) {
+  .sp-figure-right,
+  .sp-figure-left {
+    float: none;           /* Remove float */
+    clear: both;
+    max-width: 100%;       /* Allow full width */
+    margin: 1.5rem auto;   /* Center with vertical spacing */
+    display: block;
+  }
+
+  .sp-figure-right img,
+  .sp-figure-left img {
+    margin: 0 auto;        /* Center the image */
+    max-width: 90%;        /* Add side margins like default figures */
+  }
 }
 
 /* Side-by-side figures */
