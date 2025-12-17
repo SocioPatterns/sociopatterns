@@ -1,0 +1,31 @@
+---
+layout: page
+---
+
+<article class="dataset-single">
+  {% if page.date %}
+    <p class="dataset-meta">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </p>
+  {% endif %}
+
+  <div class="dataset-body">
+    {{ content }}
+  </div>
+
+  {% if page.data_terms_html %}
+    <div class="dataset-terms-block">
+      <div class="dataset-terms-header">Terms and Conditions</div>
+      <div class="dataset-terms">
+        {{ page.data_terms_html }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% include downloads-table.html files=page.files %}
+
+  <p class="back-to-datasets">
+    <a href="{{ '/datasets/' | relative_url }}">← Back to datasets</a>
+  </p>
+
+</article>

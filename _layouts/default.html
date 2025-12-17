@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="site-header">
+      {% include header.html %}
+    </header>
+
+    <main class="site-main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      {% include footer.html %}
+    </footer>
+
+    <script src="{{ '/assets/js/sidebar-highlight.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<div class="wrapper nav-wrapper">
+  <!-- Logo overlapping the orange bar -->
+  <a class="site-logo-link" href="{{ '/' | relative_url }}">
+    <img
+      src="{{ '/assets/img/header_logo.png' | relative_url }}"
+      alt="SocioPatterns"
+      class="site-logo"
+    >
+  </a>
+
+  <!-- Orange bar + nav links -->
+  <nav class="site-nav">
+    <a href="{{ '/publications.html' | relative_url }}"
+        class="{% if page.url == '/publications.html' %}active{% endif %}">
+      Publications
+    </a>
+
+    <a href="{{ '/datasets.html' | relative_url }}"
+        class="{% if page.url == '/datasets.html' %}active{% endif %}">
+      Data
+    </a>
+
+    <a href="{{ '/gallery.html' | relative_url }}"
+        class="{% if page.url == '/gallery.html' %}active{% endif %}">
+      Gallery
+    </a>
+
+    <a href="{{ '/news.html' | relative_url }}"
+        class="{% if page.url == '/news.html' %}active{% endif %}">
+      News
+    </a>
+
+    <a href="{{ '/press.html' | relative_url }}"
+        class="{% if page.url == '/press.html' %}active{% endif %}">
+      Press
+    </a>
+
+    <a href="{{ '/about/' | relative_url }}"
+        class="{% if page.url == '/about/' %}active{% endif %}">
+      About
+    </a>
+  </nav>
+</div>

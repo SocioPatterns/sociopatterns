@@ -1,0 +1,384 @@
+- id: press_01
+  source: CNRS News
+  title: 'Modelling epidemics: back to school'
+  date_text: Feb. 15, 2016
+  url: https://news.cnrs.fr/opinions/modeling-epidemics-back-to-school
+  full_text: 'CNRS News - Modelling epidemics: back to school - Feb. 15, 2016'
+  date: '2016-02-15'
+
+- id: press_02
+  source: L'info expoprotection
+  title: Pour évaluer un risque épidémique, il suffit de peu d'information
+  date_text: Nov. 16, 2015
+  url: https://www.infoprotection.fr/alain-barrat-cnrs-pour-evaluer-un-risque-epidemique-il-suffit-de-peu-dinformation/
+  full_text: L'info expoprotection - Pour évaluer un risque épidémique, il suffit
+    de peu d'information - Nov. 16, 2015
+  date: '2015-11-16'
+
+- id: press_03
+  source: Actualités de l'Institut de Physique du CNRS
+  title: Mieux évaluer le risque épidémique, même avec des données lacunaires
+  date_text: Nov 17, 2015
+  url:
+  full_text: Actualités de l'Institut de Physique du CNRS - Mieux évaluer le risque
+    épidémique, même avec des données lacunaires - Nov 17, 2015
+  date: '2015-11-17'
+
+- id: press_04
+  source: MIT Technology review
+  title: Office Networks Reveal Which Co-Workers To Avoid During Infectious Outbreaks
+  date_text: Oct. 2014
+  url: https://www.technologyreview.com/2014/10/02/111251/office-networks-reveal-which-co-workers-to-avoid-during-infectious-outbreaks/
+  full_text: MIT Technology review - Office Networks Reveal Which Co-Workers To Avoid
+    During Infectious Outbreaks - Oct. 2014
+  date: '2014-10-02'
+
+- id: press_05
+  source: MIT Technology review
+  title: Human Contact Patterns In High Schools Hint At Epidemic Containment Strategies
+  date_text: Sept. 2014
+  url: https://www.technologyreview.com/2014/09/23/171276/human-contact-patterns-in-high-schools-hint-at-epidemic-containment-strategies/
+  full_text: MIT Technology review - Human Contact Patterns In High Schools Hint At
+    Epidemic Containment Strategies - Sept. 2014
+  date: '2014-09-23'
+
+- id: press_06
+  source: Scientific American
+  title: RFID Tags Track Possible Outbreak Pathways in the Hospital
+  date_text: Nov. 2012
+  url: https://www.scientificamerican.com/article/rfid-tags-track-possible-outbreak-pathways-in-hospital/
+  full_text: Scientific American - RFID Tags Track Possible Outbreak Pathways in the
+    Hospital - Nov. 2012
+  date: '2012-11-01'
+
+- id: press_07
+  source: La Recherche
+  title: Internet change-t-il les relations humaines?
+  date_text: Nº 464, May, 2012
+  url:
+  full_text: La Recherche - Internet change-t-il les relations humaines? - Nº 464, May,
+    2012
+  date: '2012-05-01'
+
+- id: press_08
+  source: InternetActu.net
+  title: 'Réseaux Sociaux: des outils pour zoomer et dézoomer'
+  date_text: Jan 04, 2012
+  url: http://www.internetactu.net/2012/01/04/reseaux-sociaux-23-des-outils-pour-zoomer-et-dezoomer/
+  full_text: 'InternetActu.net - Réseaux Sociaux: des outils pour zoomer et dézoomer
+    - Jan 04, 2012'
+  date: '2012-01-04'
+
+- id: press_09
+  source: Wired Science
+  title: 'Visualized: A School Day as Data'
+  date_text: Aug 19, 2011
+  url: https://www.wired.com/2011/08/school-visualized/
+  full_text: 'Wired Science - Visualized: A School Day as Data - Aug 19, 2011'
+  date: '2011-08-19'
+
+- id: press_10
+  source: Le Progrès
+  title: Des badges pour évaluer la transmission des maladies
+  date_text: July 26, 2011
+  url: http://www.leprogres.fr/rhone/2011/07/26/des-badges-pour-evaluer-la-transmission-des-maladies
+  full_text: Le Progrès - Des badges pour évaluer la transmission des maladies [ paper
+    ] - July 26, 2011
+  date: '2011-07-26'
+
+- id: press_11
+  source: Le Point.fr
+  title: Des badges pour comprendre la propagation des épidémies
+  date_text: ''
+  url: http://www.lepoint.fr/chroniqueurs-du-point/anne-jeanblanc/des-badges-pour-comprendre-la-propagation-des-epidemies-19-07-2011-1354163_57.php
+  full_text: Le Point.fr - Des badges pour comprendre la propagation des épidémies
+    - July 19, 2011
+  date: '2011-07-19'
+
+- id: press_12
+  source: CNRS ress release
+  title: Des badges pour étudier la propagation des épidémies
+  date_text: ''
+  url:
+  full_text: Press release - Des badges pour étudier la propagation des épidémies
+    - July 19, 2011
+  date: '2011-07-19'
+
+- id: press_13
+  source: Mechanical Engineering
+  title: Contagious Contacts
+  date_text: November 1, 2011
+  url:
+  full_text: Mechanical Engineering - Contagious Contacts - November 1, 2011
+  date: '2011-11-01'
+
+- id: press_14
+  source: Affaritaliani.it
+  title: 'Le relazioni face-to-face all’interno di un’impresa: al via una ricerca'
+  date_text: ''
+  url: http://www.affaritaliani.it/culturaspettacoli/le_relazioni_face_to_face_interno_di_impresa060710.html
+  full_text: 'Affaritaliani.it - Le relazioni face-to-face all’interno di un’impresa:
+    al via una ricerca - July 6, 2010'
+  date: '2010-07-06'
+
+- id: press_15
+  source: Infoscari
+  title: 'H-networks: le network sciences entrano in azienda'
+  date_text: ''
+  url:
+  full_text: 'Infoscari - H-networks: le network sciences entrano in azienda - July
+    6, 2010'
+  date: '2010-07-06'
+
+- id: press_16
+  source: ScienceNOW
+  title: Face to Face With Human Mobility Research
+  date_text: ''
+  url: https://www.science.org/content/article/face-face-human-mobility-research
+  full_text: ScienceNOW - Face to Face With Human Mobility Research - July 5th, 2010
+  date: '2010-07-05'
+
+- id: press_17
+  source: MIT Technology Review
+  title: Human Networks And Causality Cones
+  date_text: ''
+  url: https://www.technologyreview.com/2010/06/09/202947/human-networks-and-causality-cones/
+  full_text: MIT Technology Review - Human Networks And Causality Cones - June 9th,
+    2010
+  date: '2010-06-09'
+
+- id: press_18
+  source: La Stampa
+  title: L'Agorà dell'innovazione
+  date_text: ''
+  url:
+  full_text: La Stampa - L'Agorà dell'innovazione - 7 Giugno 2010
+  date: '2010-06-07'
+
+- id: press_19
+  source: La Stampa
+  title: Grande Fratello in ospedale
+  date_text: 17 Novembre 2009, page 11
+  url:
+  full_text: La Stampa - Grande Fratello in ospedale - 17 Novembre 2009, page 11
+  date: '2009-11-17'
+
+- id: press_20
+  source: La Stampa
+  title: 'Influenza A: spiati con un chip per non ammalarsi'
+  date_text: November 17th, 2009
+  url:
+  full_text: 'La Stampa (online) - Influenza A: spiati con un chip per non ammalarsi
+    - November 17th, 2009'
+  date: '2009-11-17'
+
+- id: press_21
+  source: 'RAI1 national Italian TV: TG1'
+  title: November 11th, 2009
+  date_text: ''
+  url:
+  full_text: 'RAI1 national Italian TV: TG1 - November 11th, 2009'
+  date: '2009-11-11'
+
+- id: press_22
+  source: Repubblica.it
+  title: Faccia a faccia con il contagio, un chip per prevenire la malattia
+  date_text: November 10, 2009
+  url: http://www.repubblica.it/2009/11/sezioni/scienze/sociopatterns/sociopatterns/sociopatterns.html
+  full_text: Repubblica.it - Faccia a faccia con il contagio, un chip per prevenire
+    la malattia - November 10, 2009
+  date: '2009-11-10'
+
+- id: press_23
+  source: Il Messaggero.it
+  title: Un chip per prevenire l'infezione
+  date_text: November 10, 2009
+  url:
+  full_text: Il Messaggero.it - Un chip per prevenire l'infezione - November 10, 2009
+  date: '2009-11-10'
+
+- id: press_24
+  source: L'Unità
+  title: 'Salute: Bambino Gesù; con chip studio diffusione infezioni'
+  date_text: November 11th, 2009
+  url:
+  full_text: 'L''Unità - Salute: Bambino Gesù; con chip studio diffusione infezioni
+    - November 11th, 2009'
+  date: '2009-11-11'
+
+- id: press_25
+  source: Les Echos
+  title: Un badge à puce pour étudier la propagation de la grippe
+  date_text: October 20, 2009
+  url: https://www.lesechos.fr/2009/10/un-badge-a-puce-pour-etudier-la-propagation-de-la-grippe-466360
+  full_text: Les Echos - Un badge à puce pour étudier la propagation de la grippe
+    - October 20, 2009
+  date: '2009-10-20'
+
+- id: press_26
+  source: La lettre du grand Luminy
+  title: Le projet Sociopatterns
+  date_text: October 2009
+  url: /assets/pdf/lettre_luminy_sociopatterns.pdf
+  full_text: La lettre du grand Luminy - Le projet SocioPatterns - October 2009
+  date: '2009-10-01'
+
+- id: press_27
+  source: HygièneS
+  title: 'Simulation de la transmission croisée et aérienne: Mesures des contacts
+    et application à l''épidémiologie des infections nosocomiales'
+  date_text: September 2009
+  url: /assets/pdf/hygienes_2009.pdf
+  full_text: 'HygièneS - Simulation de la transmission croisée et aérienne: Mesures
+    des contacts et application à l''épidémiologie des infections nosocomiales - September
+    2009'
+  date: '2009-09-01'
+
+- id: press_28
+  source: La lettre de l'université de la Méditerranée
+  title: 'Sociopatterns: mesure en temps réel des interactions sociales'
+  date_text: September 2009
+  url:
+  full_text: 'La lettre de l''université de la Méditerranée - Sociopatterns: mesure
+    en temps réel des interactions sociales - September 2009'
+  date: '2009-09-01'
+
+- id: press_29
+  source: D di Repubblica
+  title: 'Prove di contagio virtuale'
+  date_text: June 6, 2009, page 44
+  url:
+  full_text: D di Repubblica - "Prove di contagio virtuale" - June 6, 2009, page 44
+  date: '2009-06-06'
+
+- id: press_30
+  source: TF1/LCI
+  title: Grippe A/H1N1 - Simulation d'épidémie à Nice
+  date_text: June 5, 2009
+  url: https://www.cpt.univ-mrs.fr/~barrat/0,,4435444,00-simulation-d-epidemie-a-nice-.html
+  full_text: TF1/LCI - Grippe A/H1N1 - Simulation d'épidémie à Nice - June 5, 2009
+  date: '2009-06-05'
+
+- id: press_31
+  source: France 3
+  title: Journal Télé régional Nice
+  date_text: 04 Juin 2009
+  url:
+  full_text: France 3 - Journal Télé régional Nice - 04 Juin 2009
+  date: '2009-06-04'
+
+- id: press_32
+  source: Science
+  title: Spreading the flu
+  date_text: May 22, 2009
+  url: https://10.1126/science.324_995d
+  full_text: Science - Spreading the flu - May 22, 2009
+  date: '2009-05-22'
+
+- id: press_33
+  source: WIRED
+  title: Dissecting Diseases in Dublin - With Your Kids?
+  date_text: May 5, 2009
+  url:
+  full_text: WIRED (GeekDad) - Dissecting Diseases in Dublin - With Your Kids? - May
+    5, 2009
+  date: '2009-05-05'
+
+- id: press_34
+  source: Irish Times
+  title: Where the odds are stacked in favour of contagion
+  date_text: May 4, 2009
+  url: https://karlgrimes.net/html/st_it_karlgrimes.html
+  full_text: Irish Times - Where the odds are stacked in favour of contagion - May
+    4, 2009
+  date: '2009-05-04'
+
+- id: press_35
+  source: Irish Times
+  title: Slide show about the Infectious exhibition by Bryan O'Brien
+  date_text: May 2009
+  url:
+  full_text: Irish Times - Slide show about the Infectious exhibition by Bryan O'Brien
+    - May 2009
+  date: '2009-05-01'
+
+- id: press_36
+  source: Nova Sole24Ore
+  title: 'Affinità elettriche con l''Rfid", by Federico Ferrazza'
+  date_text: April 23, 2009
+  url:
+  full_text: Nova Sole24Ore - "Affinità elettriche con l'Rfid", by Federico Ferrazza
+    - April 23, 2009
+  date: '2009-04-23'
+
+- id: press_37
+  source: Panorama, Elisa Manacorda
+  title: 'Lo so con chi stai parlando'
+  date_text: no. 17, p. 129, April 2009
+  url:
+  full_text: Panorama - "Lo so con chi stai parlando", by Elisa Manacorda  - no. 17,
+    p. 129, April 2009
+  date: '2009-04-01'
+
+- id: press_38
+  source: Digicult blog
+  title: 'INFECTIOUS: STAY AWAY'
+  date_text: May 2009
+  url:
+  full_text: 'Digicult blog - INFECTIOUS: STAY AWAY - May 2009'
+  date: '2009-05-01'
+
+- id: press_39
+  source: VisualComplexity
+  title: Exposing Contact Patterns
+  date_text: June, 2008
+  url:
+  full_text: VisualComplexity - Exposing Contact Patterns - June, 2008
+  date: '2008-06-01'
+
+- id: press_40
+  source: BoingBoing
+  title: Berlin hacker con will use RFID badges to simulate life in a totalitarian
+    panopticon
+  date_text: Dec 6, 2008 (About the SocioPatterns experiment at the Chaos Communication
+    Congress in Berlin, with a long, concerned, comment by Richard M Stallman!)
+  url: http://www.boingboing.net/2008/12/06/berlin-hacker-con-wi.html
+  full_text: BoingBoing - Berlin hacker con will use RFID badges to simulate life
+    in a totalitarian panopticon - Dec 6, 2008 (About the SocioPatterns experiment
+    at the Chaos Communication Congress in Berlin, with a long, concerned, comment
+    by Richard M Stallman!)
+  date: '2008-12-06'
+
+- id: press_41
+  source: Teletext is dood
+  title: 'Visualisatie: Contact Patterns'
+  date_text: Aug, 2008
+  url: http://teletekstisdood.blogspot.com/2008/08/visualisatie-contact-patterns.html
+  full_text: 'Teletext is dood - Visualisatie: Contact Patterns - Aug, 2008'
+  date: '2008-08-01'
+
+- id: press_42
+  source: Radio RAI3 Scienza
+  title: Interview with Ciro Cattuto (Italian)
+  date_text: July 7, 2008
+  url:
+  full_text: Radio RAI3 Scienza - interview with Ciro Cattuto (Italian) - July 7,
+    2008
+  date: '2008-07-07'
+
+- id: press_43
+  source: BreitBand
+  title: Big Brother am eigenen Leib erfahren
+  date_text: Dec 27, 2008
+  url:
+  full_text: BreitBand - Big Brother am eigenen Leib erfahren - Dec 27, 2008
+  date: '2008-12-27'
+
+- id: press_44
+  source: Atelier.fr
+  title: Quand la RFID décrypte les interactions sociales
+  date_text: Dec 1, 2008
+  url:
+  full_text: Atelier.fr - Quand la RFID décrypte les interactions sociales - Dec 1,
+    2008
+  date: '2008-12-01'

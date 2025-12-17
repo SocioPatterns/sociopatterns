@@ -1,0 +1,120 @@
+---
+layout: page
+title: Publications
+permalink: /publications.html
+---
+
+{% assign pubs = site.publications | default: empty | sort: "date" | reverse %}
+
+<div class="two-column-layout">
+  <!-- LEFT COLUMN -->
+  <div class="two-column-main">
+
+    {% assign current_year = "" %}
+
+    {% for p in pubs %}
+      {% assign year = p.date | date: "%Y" %}
+
+      {% if year != current_year %}
+        {% if current_year != "" %}
+          </ul>
+        {% endif %}
+
+        <h2 class="pub-year-heading" id="pub-year-{{ year }}">{{ year }}</h2>
+        <ul class="pub-year-list">
+
+        {% assign current_year = year %}
+      {% endif %}
+
+      <li class="pub-item">
+
+        <!-- Title -->
+        <div class="pub-title">
+          {% if p.external_url and p.external_url != "" %}
+            <a href="{{ p.external_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+          {% else %}
+            {{ p.title }}
+          {% endif %}
+        </div>
+
+        <!-- Authors -->
+        {% if p.authors and p.authors != "" %}
+          <div class="pub-authors">{{ p.authors }}</div>
+        {% endif %}
+
+        <!-- Reference -->
+        {% if p.reference and p.reference != "" %}
+          <div class="pub-ref">{{ p.reference }}</div>
+        {% endif %}
+
+        <!-- Links row -->
+        <div class="pub-links">
+          {% if p.pdf_url and p.pdf_url != "" %}
+            <a href="{{ p.pdf_url }}" class="pdf-link" target="_blank" rel="noopener">[PDF]</a>
+          {% endif %}
+
+          {% if p.abstract and p.abstract != "" %}
+            <label for="abs-{{ p.pid }}" class="pub-toggle-label">[Abstract]</label>
+          {% endif %}
+
+          {% if p.bibtex and p.bibtex != "" %}
+            <label for="bibtex-{{ p.pid }}" class="pub-toggle-label">[Bibtex]</label>
+          {% endif %}
+        </div>
+
+        <!-- Abstract toggle (matches your CSS: .pub-toggle-abs:checked ~ .pub-abstract-block) -->
+        {% if p.abstract and p.abstract != "" %}
+          <input
+            type="checkbox"
+            id="abs-{{ p.pid }}"
+            class="pub-toggle-input pub-toggle-abs"
+          />
+          <div class="pub-toggle-block pub-abstract-block">{{ p.abstract }}</div>
+        {% endif %}
+
+        <!-- BibTeX toggle (matches your CSS: .pub-toggle-bibtex:checked ~ .pub-bibtex-block) -->
+        {% if p.bibtex and p.bibtex != "" %}
+          <input
+            type="checkbox"
+            id="bibtex-{{ p.pid }}"
+            class="pub-toggle-input pub-toggle-bibtex"
+          />
+          <div class="pub-toggle-block pub-bibtex-block">
+            <pre><code>{{ p.bibtex | escape }}</code></pre>
+          </div>
+        {% endif %}
+
+      </li>
+
+    {% endfor %}
+
+    {% if current_year != "" %}
+      </ul>
+    {% endif %}
+
+  </div>
+
+  <!-- RIGHT COLUMN: years -->
+  <aside class="two-column-sidebar">
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">Years</h2>
+
+      {% assign years_acc = "" %}
+      {% for p in pubs %}
+        {% assign y = p.date | date: "%Y" %}
+        {% unless years_acc contains y %}
+          {% assign years_acc = years_acc | append: y | append: "," %}
+        {% endunless %}
+      {% endfor %}
+      {% assign years = years_acc | split: "," %}
+
+      <ul class="sidebar-list">
+        {% for y in years %}
+          {% if y != "" %}
+            <li><a href="#pub-year-{{ y }}">{{ y }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>

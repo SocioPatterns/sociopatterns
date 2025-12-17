@@ -1,0 +1,70 @@
+---
+layout: page
+title: Deployments
+permalink: /deployments.html
+---
+
+{% assign deployments_sorted = site.deployments | sort: "date" %}
+
+<div class="two-column-layout">
+  <!-- LEFT: main scrollable content (2/3 width) -->
+  <div class="two-column-main">
+
+    <ul class="deployment-list">
+    {% for d in deployments_sorted reversed %}
+      {% assign anchor_id = "deployment-" | append: d.slug %}
+      <li class="deployment-item" id="{{ anchor_id }}">
+
+        <!-- Title -->
+        <div class="deployment-title">
+          <a href="{{ d.url | relative_url }}">{{ d.title }}</a>
+        </div>
+
+        <!-- Event info -->
+        {% if d.event %}
+          <div class="deployment-event">
+            {{ d.event }}
+          </div>
+        {% endif %}
+
+        <!-- Location and dates -->
+        <div class="deployment-meta-row">
+          {% if d.location %}
+            <span class="deployment-location">{{ d.location }}</span>
+          {% endif %}
+          {% if d.from and d.till %}
+            <span class="deployment-dates">
+              {{ d.from | date: "%B %Y" }} – {{ d.till | date: "%B %Y" }}
+            </span>
+          {% endif %}
+        </div>
+
+        <!-- Content preview (first 50 words from body) -->
+        {% if d.content %}
+          <div class="deployment-preview">
+            {{ d.content | strip_html | truncatewords: 50 }}
+            <a href="{{ d.url | relative_url }}" class="deployment-read-more">Read more →</a>
+          </div>
+        {% endif %}
+
+      </li>
+    {% endfor %}
+    </ul>
+
+  </div>
+
+  <!-- RIGHT: sidebar with list of deployments (1/3 width) -->
+  <aside class="two-column-sidebar">
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">Deployments</h2>
+      <ul class="sidebar-list">
+        {% for d in deployments_sorted reversed %}
+          {% assign anchor_id = "deployment-" | append: d.slug %}
+          <li>
+            <a href="#{{ anchor_id }}">{{ d.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>

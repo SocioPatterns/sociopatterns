@@ -1,0 +1,27 @@
+{% assign files = include.files %}
+
+{% if files and files.size > 0 %}
+  <table class="downloads-table">
+    <thead>
+      <tr>
+        <th class="downloads-title">Downloads</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for f in files %}
+        <tr>
+          <td class="downloads-text-cell">
+            {% if f.path %}
+              <a href="{{ f.path | relative_url }}">{{ f.label | default: f.path }}</a>
+            {% else %}
+              {{ f.label }}
+            {% endif %}
+            {% if f.meta %}
+              <span class="dataset-meta"> — {{ f.meta }}</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}

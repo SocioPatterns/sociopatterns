@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<title>
+  {% if page.title %}
+    {{ page.title }} – {{ site.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | default: site.description }}">
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

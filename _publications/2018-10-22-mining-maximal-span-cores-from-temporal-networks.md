@@ -1,0 +1,14 @@
+---
+title: Mining (maximal) span-cores from temporal networks
+slug: mining-maximal-span-cores-from-temporal-networks
+date: '2018-10-22'
+reference: Proceedings of CIKM 2018, October 22-26, 2018, Torino, Italy
+bibtex: ''
+pdf_url: /assets/papers/1874.09376.pdf
+external_url: https://dl.acm.org/doi/10.1145/3269206.3271767
+abstract: |-
+  When analyzing temporal networks, a fundamental task is the identification of dense structures (i.e., groups of vertices that exhibit a large number of links), together with their temporal span (i.e., the period of time for which the high density holds). We tackle this task by introducing a notion of temporal core decomposition where each core is associated with its span: we call such cores span-cores. As the total number of time intervals is quadratic in the size of the temporal domain T under analysis, the total number of span-cores is quadratic in |T| as well. Our first contribution is an algorithm that, by exploiting containment properties among span-cores, computes all the span-cores efficiently. Then, we focus on the problem of finding only the maximal span-cores, i.e., span-cores that are not dominated by any other span-core by both the coreness property and the span. We devise a very efficient algorithm that exploits theoretical findings on the maximality condition to directly compute the maximal ones without computing all span-cores. Experimentation on several real-world temporal networks confirms the efficiency and scalability of our methods. Applications on temporal networks, gathered by a proximity-sensing infrastructure recording face-to-face interactions in schools, highlight the relevance of the notion of (maximal) span-core in analyzing social dynamics and detecting/correcting anomalies in the data.
+authors: Edoardo Galimberti, Alain Barrat, Francesco Bonchi, Ciro Cattuto, Francesco Gullo
+pid: '1874'
+layout: publication_item
+---

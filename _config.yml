@@ -1,0 +1,35 @@
+title: "SocioPatterns"
+description: "The home of the SocioPatterns research collaboration"
+url: "https://www.sociopatterns.org"
+baseurl: ""
+
+markdown: kramdown
+theme: null
+plugins:
+
+collections:
+  publications:
+    output: false
+  datasets:
+    output: true
+    permalink: /datasets/:slug/
+  gallery:
+    output: true
+    permalink: /gallery/:slug/
+  news:
+    output: true
+    permalink: /news/:year/:month/:slug/
+  deployments:
+    output: true
+    permalink: /deployments/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: news_item
+  - scope:
+      path: ""
+    values:
+      layout: default

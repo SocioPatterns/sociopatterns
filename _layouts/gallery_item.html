@@ -1,0 +1,31 @@
+---
+layout: page
+---
+
+<article class="gallery-single">
+
+  {% if page.date %}
+    <p class="gallery-meta">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </p>
+  {% endif %}
+
+  {% if page.title %}
+    <h1 class="gallery-title">{{ page.title }}</h1>
+  {% endif %}
+
+  <div class="gallery-body">
+    {{ content }}
+  </div>
+
+  {% if page.authors %}
+    <p class="gallery-credit">
+      <em>Credit: {{ page.authors }}</em>
+    </p>
+  {% endif %}
+
+  <p class="back-to-gallery">
+    <a href="{{ '/gallery/' | relative_url }}">← Back to gallery</a>
+  </p>
+
+</article>

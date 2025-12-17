@@ -1,0 +1,86 @@
+---
+layout: page
+title: Press
+permalink: /press.html
+---
+
+{% assign press_items = site.data.press | sort: "date" | reverse %}
+
+<div class="two-column-layout">
+  <!-- LEFT: main scrollable content (press list) -->
+  <div class="two-column-main">
+
+    {% assign current_year = "" %}
+
+    {% for p in press_items %}
+      {% assign year = p.date | date: "%Y" %}
+
+      {% if year != current_year %}
+        {% if current_year != "" %}
+          </ul>
+        {% endif %}
+
+        <h2 class="press-year-heading" id="press-year-{{ year }}">{{ year }}</h2>
+        <ul class="press-list">
+
+        {% assign current_year = year %}
+      {% endif %}
+
+      <li class="press-item">
+
+        {% if p.source or p.date %}
+        <div class="press-meta">
+          {% if p.source %}
+            <span class="press-source">{{ p.source }}</span>
+          {% endif %}
+          {% if p.source and p.date %} — {% endif %}
+          {% if p.date %}
+            <span class="press-date">{{ p.date | date: "%B %-d, %Y" }}</span>
+          {% endif %}
+        </div>
+        {% endif %}
+
+    <div class="press-title">
+      {% if p.url %}
+        <a href="{{ p.url }}" target="_blank" rel="noopener">
+          <span class="press-title-text">{{ p.title | default: p.full_text }}</span>
+        </a>
+      {% else %}
+        <span class="press-title-text">{{ p.title | default: p.full_text }}</span>
+      {% endif %}
+    </div>
+
+      </li>
+    {% endfor %}
+
+    {% if current_year != "" %}
+      </ul>
+    {% endif %}
+
+  </div>
+
+  <!-- RIGHT: sidebar with years only -->
+  <aside class="two-column-sidebar">
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">Years</h2>
+
+      {% assign years_acc = "" %}
+      {% for p in press_items %}
+        {% assign y = p.date | date: "%Y" %}
+        {% unless years_acc contains y %}
+          {% assign years_acc = years_acc | append: y | append: "," %}
+        {% endunless %}
+      {% endfor %}
+      {% assign years = years_acc | split: "," %}
+
+      <ul class="sidebar-list">
+        {% for y in years %}
+          {% if y != "" %}
+            <li><a href="#press-year-{{ y }}">{{ y }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+  </aside>
+</div>

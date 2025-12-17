@@ -1,0 +1,70 @@
+---
+layout: page
+title: Datasets
+permalink: /datasets.html
+---
+
+{% assign datasets_sorted = site.datasets | sort: "date" %}
+
+<div class="two-column-layout">
+  <!-- LEFT: main scrollable content (2/3 width) -->
+  <div class="two-column-main">
+
+    <ul class="dataset-list">
+    {% for d in datasets_sorted reversed %}
+      {% assign anchor_id = "dataset-" | append: d.slug %}
+      <li class="dataset-item" id="{{ anchor_id }}">
+
+        <!-- Title -->
+        <div class="dataset-title">
+          <a href="{{ d.url | relative_url }}">{{ d.title }}</a>
+        </div>
+
+        <!-- Date -->
+        {% if d.date %}
+          <div class="dataset-date">
+            {{ d.date | date: "%Y-%m-%d" }}
+          </div>
+        {% endif %}
+
+        <!-- Full HTML body (images, text, etc.) -->
+        {% if d.content %}
+          <div class="dataset-body">
+            {{ d.content }}
+          </div>
+        {% endif %}
+
+        <!-- Terms & Conditions -->
+        {% if d.data_terms_html %}
+          <div class="dataset-terms-block">
+            <div class="dataset-terms-header">Terms and Conditions</div>
+            <div class="dataset-terms">
+              {{ d.data_terms_html }}
+            </div>
+          </div>
+        {% endif %}
+
+      <!-- Downloads -->
+      {% include downloads-table.html files=d.files %}
+      
+      </li>
+    {% endfor %}
+    </ul>
+
+  </div>
+
+  <!-- RIGHT: sidebar with list of datasets (1/3 width) -->
+  <aside class="two-column-sidebar">
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">Datasets</h2>
+      <ul class="sidebar-list">
+        {% for d in datasets_sorted reversed %}
+          {% assign anchor_id = "dataset-" | append: d.slug %}
+          <li>
+            <a href="#{{ anchor_id }}">{{ d.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>

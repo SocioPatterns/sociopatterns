@@ -1,0 +1,65 @@
+---
+layout: page
+title: Gallery
+permalink: /gallery.html
+---
+
+{% assign gallery_sorted = site.gallery | sort: "date" %}
+
+<div class="two-column-layout">
+  <!-- LEFT: main content -->
+  <div class="two-column-main">
+    
+    <ul class="gallery-list">
+      {% for g in gallery_sorted reversed %}
+        {% assign base_slug = g.slug | default: g.id | default: g.title | slugify %}
+        {% assign anchor_id = "gallery-" | append: base_slug %}
+
+        <li class="gallery-item" id="{{ anchor_id }}">
+
+          <div class="gallery-title">
+            <a href="{{ g.url | relative_url }}">{{ g.title }}</a>
+          </div>
+
+          {% if g.date %}
+            <div class="gallery-meta">
+              {{ g.date | date: "%Y-%m-%d" }}
+            </div>
+          {% endif %}
+
+          {% if g.content and g.content != "" %}
+            <div class="gallery-body">
+              {{ g.content }}
+            </div>
+          {% endif %}
+
+          {% if g.authors %}
+            <p class="gallery-credit">
+            <em>Credits: {{ g.authors }}</em>
+            </p>
+          {% endif %}
+
+          {% include downloads-table.html files=g.files %}
+
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+  <!-- RIGHT: sidebar -->
+  <aside class="two-column-sidebar">
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">Gallery</h2>
+
+      <ul class="sidebar-list">
+        {% for g in gallery_sorted reversed %}
+          {% assign base_slug = g.slug | default: g.id | default: g.title | slugify %}
+          {% assign anchor_id = "gallery-" | append: base_slug %}
+          <li><a href="#{{ anchor_id }}">{{ g.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </aside>
+</div>

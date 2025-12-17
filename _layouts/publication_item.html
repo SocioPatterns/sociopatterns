@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="publication-single">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.authors %}
+    <div class="pub-authors">{{ page.authors }}</div>
+  {% endif %}
+
+  {% if page.reference %}
+    <div class="pub-ref">{{ page.reference }}</div>
+  {% endif %}
+
+  <div class="pub-links">
+    {% if page.external_url %}
+      <a href="{{ page.external_url }}" target="_blank" rel="noopener">[Publisher]</a>
+    {% endif %}
+    {% if page.pdf_url %}
+      <a href="{{ page.pdf_url }}" target="_blank" rel="noopener">[PDF]</a>
+    {% endif %}
+  </div>
+
+  {% if page.abstract %}
+    <h2>Abstract</h2>
+    <div class="pub-abstract-block">{{- page.abstract -}}</div>
+  {% endif %}
+
+  {% if page.bibtex %}
+    <h2>BibTeX</h2>
+    <pre><code>{{- page.bibtex | escape -}}</code></pre>
+  {% endif %}
+</article>

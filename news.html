@@ -1,0 +1,89 @@
+---
+layout: page
+title: News
+permalink: /news.html
+---
+
+{% assign news_sorted = site.news | sort: "date" %}
+
+<div class="two-column-layout">
+  <!-- LEFT: main scrollable content (2/3 width) -->
+  <div class="two-column-main">
+
+    <ul class="news-list">
+    {% for item in news_sorted reversed %}
+      {% assign base_slug = item.slug | default: item.id | default: item.title | slugify %}
+      {% assign anchor_id = "news-" | append: base_slug %}
+
+      <li class="news-item" id="{{ anchor_id }}">
+
+        <!-- Title -->
+        <div class="news-title">
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        </div>
+
+        <!-- Date (YYYY-MM-DD) -->
+        {% if item.date %}
+          <div class="news-meta">
+            {{ item.date | date: "%Y-%m-%d" }}
+          </div>
+        {% endif %}
+
+        <!-- FULL HTML content (images, paragraphs, formatting preserved) -->
+        <div class="news-body">
+          {% if item.content %}
+            {{ item.content }}
+          {% elsif item.excerpt_html %}
+            {{ item.excerpt_html }}
+          {% endif %}
+        </div>
+
+      </li>
+    {% endfor %}
+    </ul>
+
+  </div>
+
+  <!-- RIGHT: sidebar with news items grouped by year (1/3 width) -->
+  <aside class="two-column-sidebar">
+    <div class="sidebar-section">
+      <h2 class="sidebar-title">News by year</h2>
+
+      <ul class="sidebar-list sidebar-news-by-year">
+        {% assign current_year = "" %}
+
+        {% for item in news_sorted reversed %}
+          {% if item.date %}
+            {% assign year = item.date | date: "%Y" %}
+          {% else %}
+            {% assign year = "Unknown" %}
+          {% endif %}
+
+          {% assign base_slug = item.slug | default: item.id | default: item.title | slugify %}
+          {% assign anchor_id = "news-" | append: base_slug %}
+
+          {% if year != current_year %}
+            {% if current_year != "" %}
+                </ul>
+              </li>
+            {% endif %}
+            <li class="sidebar-year">
+              <span class="sidebar-year-label">{{ year }}</span>
+              <ul class="sidebar-year-items">
+            {% assign current_year = year %}
+          {% endif %}
+
+          <li>
+            <a href="#{{ anchor_id }}">{{ item.title }}</a>
+          </li>
+
+        {% endfor %}
+
+        {% if current_year != "" %}
+              </ul>
+            </li>
+        {% endif %}
+      </ul>
+    </div>
+  </aside>
+</div>

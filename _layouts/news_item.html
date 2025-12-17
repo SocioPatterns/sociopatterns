@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+<article class="news-single">
+  {% if page.date %}
+    <p class="news-meta">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </p>
+  {% endif %}
+
+  <div class="news-body">
+    {{ content }}
+  </div>
+
+  <p class="back-to-news">
+    <a href="{{ '/news/' | relative_url }}">← Back to all news</a>
+  </p>
+</article>
