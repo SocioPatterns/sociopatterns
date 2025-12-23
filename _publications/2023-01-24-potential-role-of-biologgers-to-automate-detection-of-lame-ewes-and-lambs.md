@@ -14,7 +14,7 @@ bibtex: |-
     pages = {105847},
     doi = {10.1016/j.applanim.2023.105847}
   }
-pdf_url: null
+pdf_url: /assets/papers/1-s2.0-S0168159123000199-main.pdf
 external_url: https://www.sciencedirect.com/science/article/pii/S0168159123000199
 abstract: |-
   Biologging offers a novel opportunity to detect lameness in sheep by identifying behavioural changes in activity patterns via accelerometers and proximity sensors. In this study, 50 Poll Dorset ewes rearing lambs were equipped with biologgers; behavioural data were analysed over a 13-day period to compare activity and standing behaviour between lame and non-lame animals. Results show decreased standing and grazing time, and increased inactivity among lame ewes and lambs, suggesting that biologging can act as an early detection tool for lameness.
