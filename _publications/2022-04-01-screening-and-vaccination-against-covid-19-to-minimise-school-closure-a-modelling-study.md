@@ -3,7 +3,16 @@ title: 'Screening and vaccination against COVID-19 to minimise school closure: a
 slug: screening-and-vaccination-against-covid-19-to-minimise-school-closure-a-modelling-study
 date: '2022-04-01'
 reference: The Lancet Infectious Diseases 22(7), 977 (2022)
-bibtex: ''
+bibtex: '@article{colosi2022screening,
+  title={Screening and vaccination against COVID-19 to minimise school closure: a modelling study},
+  author={Colosi, Elisabetta and Bassignana, Giulia and Contreras, Diego Andr{\'e}s and Poirier, Canelle and Bo{\"e}lle, Pierre-Yves and Cauchemez, Simon and Yazdanpanah, Yazdan and Lina, Bruno and Fontanet, Arnaud and Barrat, Alain and others},
+  journal={The Lancet Infectious Diseases},
+  volume={22},
+  number={7},
+  pages={977--989},
+  year={2022},
+  publisher={Elsevier}
+}'
 pdf_url: /assets/papers/PIIS1473309922001384.pdf
 external_url: https://doi.org/10.1016/S1473-3099(22)00138-4
 abstract: |-
