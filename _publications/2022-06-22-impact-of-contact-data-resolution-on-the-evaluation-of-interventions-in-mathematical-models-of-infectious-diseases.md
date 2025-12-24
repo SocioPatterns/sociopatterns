@@ -3,14 +3,14 @@ title: Impact of contact data resolution on the evaluation of interventions in m
 slug: impact-of-contact-data-resolution-on-the-evaluation-of-interventions-in-mathematical-models-of-infectious-diseases
 date: '2022-06-22'
 reference: Journal of the Royal Society Interface 19, 20220164 (2022)
-bibtex: '@article{contreras2022impact,
-author = {Contreras, Diego Andrés AND Colosi, Elisabetta AND Bassignana, Giulia AND Colizza, Vittoria and Barrat, Alain},
-title={Impact of contact data resolution on the evaluation of interventions in mathematical models of infectious diseases},
-journal={J. R. Soc. Interface},
-volume={19},
-pages={20220164},
-year={2022}}
-'
+bibtex: |-
+  @article{contreras2022impact,
+    author = {Contreras, Diego Andrés AND Colosi, Elisabetta AND Bassignana, Giulia AND Colizza, Vittoria and Barrat, Alain},
+    title={Impact of contact data resolution on the evaluation of interventions in mathematical models of infectious diseases},
+    journal={J. R. Soc. Interface},
+    volume={19},
+    pages={20220164},
+    year={2022}}
 pdf_url: /assets/papers/rsif.2022.0164.pdf
 external_url: https://doi.org/10.1098/rsif.2022.0164
 abstract: |-
